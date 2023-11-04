@@ -20,6 +20,7 @@ entity Products @(cds.persistence.skip:'always') {
   key ID : String;
 }
 
+@cds.autoexpose
 entity Categories {
   key ID          : Integer;
       description : String(240);

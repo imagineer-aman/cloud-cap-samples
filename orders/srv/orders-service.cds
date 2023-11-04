@@ -4,6 +4,4 @@ service OrdersService {
   entity Orders as projection on my.Orders;
   entity Items as projection on my.Orders.Items
     where category.ID = 1 or category.ID = 2;
-    
-  entity Categories as projection on my.Categories;
 }
